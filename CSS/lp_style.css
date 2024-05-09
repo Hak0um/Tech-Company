@@ -4,7 +4,7 @@
     font-style: normal;}
     a{
         color: white;
-        text-decoration: none;
+        text-decoration:none;
     }
     body{
 background-image: linear-gradient(to right ,rgba(38, 5, 129, 0.590) ,rgba(0, 0, 0, 0.600))
@@ -15,16 +15,27 @@ background-repeat: no-repeat;
 background-size: cover;
 background-attachment: fixed; 
     }
+
+    body:hover{
+        background-image: linear-gradient(to right ,rgba(38, 5, 129, 0.507) ,rgba(0, 0, 0, 0.542))
+,url(../MEDIA/background.jpg)
+; }
+
 header{
     display:flex;
     justify-content: space-between; 
     align-items: center;
-    background-color: black;
+    background-color: rgba(4, 4, 51, 0.418);
     margin: -8px -8px;
+    background-attachment: fixed;
 }
+
 .logo{
-    display: flex;
+    font-size: 35px;
+    text-transform: capitalize;
+    padding-left: 5px;
 }
+
 
 ul{
     list-style:none ;

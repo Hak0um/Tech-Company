@@ -1,13 +1,11 @@
-let nameinput = document.querySelector("[name='name'") ;
-let emailinput = document.querySelector("[name='email") ;
-document.forms[0].onsubmit = function (e){
-    let namevalid=false;
-    let emailvalid=false;
-    if(nameinput.value !== ""&&emailinput.contains("@") ){
-        namevalid=true;
-        emailvalid=true;
-    }
-    if(namevalid===false || emailvalid=== false){
-        e.preventDefault();
-    }
-}
+const SignUpButton = document.getElementById('signUp');
+const SignInButton = document.getElementById('signIn');
+const block = document.getElementById('block');
+
+SignUpButton.addEventListener('click', () => {
+    block.classList.add("right-panel-active");
+});
+
+SignInButton.addEventListener('click', () => {
+    block.classList.remove("right-panel-active");
+});
